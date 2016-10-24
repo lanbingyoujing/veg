@@ -1,0 +1,336 @@
+*{
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+html,body{
+    height:100%;
+}
+body{
+    display: flex;
+    flex-direction:column;
+    background: #ccc;
+    padding-top:278px;
+}
+/*头部区域    开始*/
+.main{
+    position: fixed;
+    top:0;
+    width:100%;
+    background: #ccc;
+}
+.top{
+    height:34px;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    background: #3BA15C;
+    z-index: 0999;
+}
+.top .top_back{
+    width:14px;
+    height:28px;
+    margin-top:3px;
+    background: url(../img/images/back.png) no-repeat;
+    background-size: 100%;
+    margin-right:20px;
+    cursor: pointer;
+}
+
+/*搜索框    开始*/
+.top .top_search{
+    display: flex;
+    position: relative;
+    flex: 1;
+    width:200px;
+    height:28px;
+    margin-top: 3px;
+    background: #fff;
+}
+.top .top_search input{
+    position: absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:28px;
+    line-height:28px;
+    padding-left:10px;
+    border:none;
+    color: #999;
+}
+.top .top_search span{
+    display: block;
+    position: absolute;
+    top:3px;
+    right:5px;
+    width:22px;
+    height:22px;
+    background: url(../img/images/search.png);
+    background-size: 100%;
+    cursor: pointer;
+}
+
+/*搜索框的提醒区域    开始*/
+.top .search_remind{
+    display: none;
+    align-items:center;
+    position: fixed;
+    width:100%;
+    height:100%;
+    background: rgba(10,10,10,0.6);
+    z-index: 999;
+}
+.top .search_remind p{
+    position: relative;
+    width:100%;
+    height:200px;
+    line-height: 200px;
+    text-align: center;
+    font-size:29px;
+    background: #fff;
+}
+/*搜索框的提醒区域    结束*/
+/*搜索框    结束*/
+.top .top_message{
+    position: relative;
+    width: 34px;
+    height:28px;
+    margin-top:3px;
+    margin-left:20px;
+    background: url(../img/images/message.png) no-repeat;
+    background-size: 100%;
+}
+.top .top_message span{
+    position: absolute;
+    right:0;
+    top:-3px;
+    width:22px;
+    height:14px;
+    line-height: 14px;
+    text-align: center;
+    background: orangered;
+    border-radius:7px;
+    font-size: 12px;
+    color: #fff;
+}
+/*头部区域    结束*/
+
+
+
+/*筛选区域    开始*/
+.filter{
+    position: relative;
+    display: flex;
+    width:100%;
+    padding:8px 0;
+    border-bottom:1px solid #eee;
+    background: #fff;
+}
+.filter>div{
+    flex:1;
+    height:20px;
+    line-height: 20px;
+    text-align: center;
+}
+/*km区域    开始*/
+.filter .km{
+    border-right:1px solid #999;
+}
+.filter .km .show{
+    cursor: pointer;
+}
+.filter .km .show span{
+    font-size:4px;
+    vertical-align: 2px;
+}
+
+/*隐藏区域  公用    开始*/
+.hide{
+    position: absolute;
+    top:36px;
+    left:0;
+    width:100%;
+    text-align: left;
+    background:#fff
+}
+.hide ul li{
+    padding-left:10px;
+    padding-top:10px;
+    border-bottom:1px solid #3BA15C;
+    cursor: pointer;
+}
+.hide ul li span{
+    font-size: 22px;
+    margin-right:20px;
+    color: #3BA15C;
+    visibility: hidden;
+}
+/*隐藏区域  公用    结束*/
+/*km区域    结束*/
+
+/*user区域    开始*/
+.filter .user .show{
+    cursor: pointer;
+}
+.filter .user .show span{
+    font-size:4px;
+    vertical-align: 2px;
+}
+.filter .user .hide ul li{
+    position: relative;
+    padding-left:0;
+    padding-right:0;
+}
+.filter .user .hide ul li p{
+    position: absolute;
+    right:0;
+    top:11px;
+    width:15px;
+    height:15px;
+    border:1px solid #3BA15C;
+    border-radius: 9px;
+}
+.filter .user .hide ul li span{
+    visibility: visible;
+    margin-right: 0;
+}
+.filter .user .hide ul .last{
+    background: #eee;
+    height:30px;
+}
+.filter .user .hide ul .last .reset{
+    float: left;
+}
+.filter .user .hide ul .last .close{
+    float: right;;
+}
+/*user区域    结束*/
+/*筛选区域    结束*/
+
+
+
+
+/*商品分类    开始*/
+.rank{
+    width:100%;
+    padding:25px 0;
+    background: #fff;
+}
+.rank ul{
+    display: flex;
+}
+.rank ul li{
+    flex: 1;
+    text-align: center;
+    cursor: pointer;
+}
+.rank ul li p{
+    margin-top:10px;
+}
+/*商品分类    结束*/
+
+
+/*计算区域    开始*/
+.math{
+
+    background: #fff;
+    margin-top:10px;
+    border-bottom:1px solid #eee;
+}
+/*breed区域    开始*/
+.math .breed{
+    display: flex;
+    justify-content: space-between;
+    padding:5px 20px;
+    border-bottom:1px solid #eee;
+}
+
+
+/*breed区域    结束*/
+
+/*result区域    开始*/
+.math .result ul{
+    display: flex;
+    justify-content: space-between;
+    padding:15px 0;
+}
+.math .result ul li{
+    flex: 1;
+    border-right:1px solid #999;
+    text-align: center;
+    cursor: pointer;
+}
+.math .result ul li p{
+    display: inline-block;
+    vertical-align: -3px;
+}
+.math .result ul li p span {
+    display: block;
+    width:7px;
+    height:7px;
+}
+.math .result ul li p .top{
+    background: url(../img/images/arrow.png) no-repeat 0 0 / 6px;
+}
+.math .result ul li p .bottom{
+    background: url(../img/images/arrow1.png) no-repeat 0 0 / 6px;
+}
+.green_arrow{
+    position: relative;
+    top:-3px;
+    background: url(../img/images/arrow2.png) no-repeat 0 0 / 6px;
+}
+/*result区域    结束*/
+/*计算区域    结束*/
+
+
+.change{
+    flex:1;
+}
+.change iframe{
+    width:100%;
+    height:100%;
+}
+
+.wrap{
+    background: #fff;
+}
+.wrap>li{
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+/*title区域    开始*/
+.wrap .title{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:5px;
+    padding-left:20px;
+}
+.wrap .title .icon{
+    margin-right:20px;
+}
+.wrap .title .icon span{
+    display: inline-block;
+    width:10px;
+    height:14px;
+    background: #ccc;
+}
+.wrap .title .icon .love{
+    margin-right:50px;
+}
+/*title 区域    结束*/
+
+/*money区域    开始*/
+.wrap .money li{
+    display: flex;
+    text-align: center;;
+}
+.wrap .money li p{
+    flex:1;
+}
+/*money区域    结束*/

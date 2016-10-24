@@ -1,0 +1,102 @@
+*{
+    margin:0 auto ;
+    padding:0;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+/*header区域    开始*/
+.header{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:20px;
+    line-height: 20px;
+    padding:10px 0;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    background: #3BA15C url(../img/images/back.png) no-repeat 10px center/ 12px;
+}
+.header .back{
+    position: absolute;
+    top:0;
+    width:38px;
+    height:40px;
+    cursor: pointer;
+}
+/*header区域    结束*/
+
+
+
+/*content区域    开始*/
+.content{
+    position: relative;
+    margin-top:40px;
+}
+
+/*title区域    开始*/
+.content .title {
+    display: flex;
+    border-bottom: 1px solid #eee;
+    line-height:55px ;
+}
+.content .title p{
+    flex:1;
+    padding:10px 0;
+    text-align: center;
+    cursor: pointer;
+    line-height:2;
+}
+.content .title span{
+    margin-top:10px;
+}
+.title_hover{
+    color: #3BA15C;
+    border-bottom:2px solid #3BA15C;
+}
+/*title区域    结束*/
+
+/*list区域    开始*/
+.content .list{
+    position: absolute;
+    top:55px;
+    left:0;
+    display: none;
+    width:100%;
+}
+.content .list li{
+    display: flex;
+    padding:15px 0;
+    border-bottom:1px solid #eee;
+}
+.content .list li .pic{
+    width:100px;
+    height:50px;
+    background: #ccc;
+}
+.content .list li .txt{
+    flex:1;
+    margin-left:10px;
+}
+.content .list li .txt h3{
+    margin-top:14px;
+}
+.content .list li .txt span{
+    color: #999;
+    font-size: 12px;
+}
+.content .list li .click{
+    width:15px;
+    height:15px;
+    margin-right:35px;
+    background: #cc4e0e;
+    border-radius:9px;
+    cursor: pointer;
+}
+/*list区域    结束*/
+/*content区域    结束*/

@@ -1,0 +1,259 @@
+﻿*{
+    margin:0;
+    padding:0;
+}
+li{
+    list-style: none;
+}
+body{
+    background: #ccc;
+}
+a{
+    text-decoration: none;
+}
+/*头部区域    开始*/
+.top{
+    position: fixed;
+    left:0;
+    top:0;
+    height:34px;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    background: #3BA15C;
+    z-index: 0999;
+}
+.top .top_back{
+    width:14px;
+    height:28px;
+    margin-top:3px;
+    background: url(../img/images/back.png) no-repeat;
+    background-size: 100%;
+    margin-right:20px;
+}
+.top .top_search{
+    display: flex;
+    position: relative;
+    flex: 1;
+    width:200px;
+    height:28px;
+    margin-top: 3px;
+    background: #fff;
+}
+.top .top_search input{
+    position: absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:28px;
+    line-height:28px;
+    text-indent: 10px;
+    border:none;
+}
+.top .top_search span{
+    display: block;
+    position: absolute;
+    top:3px;
+    right:5px;
+    width:22px;
+    height:22px;
+    background: url(../img/images/search.png);
+    background-size: 100%;
+}
+.top .top_message{
+    width: 34px;
+    height:28px;
+    margin-top:3px;
+    margin-left:20px;
+    background: url(../img/images/message.png) no-repeat;
+    background-size: 100%;
+}
+/*头部区域    结束*/
+
+
+
+
+/*banner样式的设置     开始*/
+.banner{
+    height:220px;
+    display: flex;
+    justify-content: center;
+    margin-top:34px;
+}
+.banner .banner_box{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width:391px;
+    height:220px;
+}
+.banner .banner_box img{
+    position: absolute;
+    left:0;
+    top:0;
+}
+.banner .banner_box .list{
+    margin-top:180px;
+    position: relative;
+    z-index: 1000;
+}
+.banner .banner_box .list span{
+    display: block;
+    float: left;
+    width:10px;
+    height:10px;
+    margin:10px;
+    background: #ddd;
+    border-radius: 5px;
+}
+.banner .banner_box .title{
+    position: absolute;
+    left:15px;
+    top:2px;
+}
+.banner .banner_box .title li{
+    position: absolute;
+    left:0;
+    top:0;
+}
+/*banner样式设置    结束*/
+
+
+/*选择区域    开始*/
+.more{
+    background: #fff;
+    padding:20px 0;
+}
+.more .more_box{
+    display: flex;
+    justify-content:space-around;
+}
+.more .more_box li{
+    text-align: center;
+    cursor: pointer;
+}
+/*选择区域    结束*/
+
+
+
+
+
+
+
+
+
+/*市场区域   开始*/
+.market{
+    width:100%;
+    background: #fff;
+    margin-top:10px;
+    padding-bottom:10px;
+}
+
+/*标题  公用部分   开始*/
+.title{
+    display: flex;
+    justify-content: space-between;
+    border-bottom:1px solid #ccc;
+    padding:10px 0;
+}
+.title h3{
+    padding-left: 22px;
+    background: url(../img/images/store.png) no-repeat 0 1px /19px ;
+}
+.title a{
+    display: block;
+    padding-right:10px;
+    background: url(../img/images/you.png) no-repeat right 2px/ 8px;
+    color: #666;
+}
+/*标题 公用部分   结束*/
+
+/*列表区  公用部分   开始*/
+.list li{
+    display: flex;
+    padding-top:10px;
+    border-bottom:1px solid #ccc
+}
+.list li .pic{
+    display: block;
+    width:149px;
+    height:84px;
+    background: #cccccc;
+}
+.list li .content{
+    flex:1;
+    padding-left:6px;
+}
+.list li .content h3{
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+ .list li .content .lv{
+    width:110px;
+    height:21px;
+    background: url(../img/images/star_01.png);
+    margin:3px 0;
+}
+ .list li .content .address{
+    padding:3px 0 3px 18px;
+    background: url(../img/images/dis.png) no-repeat 0 2px / 15px;
+}
+ .list li .content .time{
+    padding:3px 0 3px 18px;
+    background: url(../img/images/time.png) no-repeat 0 4px / 16px;
+}
+/*列表区  公用部分   结束*/
+/*市场区域   结束*/
+
+
+
+
+/*!*选食谱找优惠    开始*!*/
+.find{
+    width:100%;
+    background: #fff;
+    margin-top:10px;
+    padding-bottom:10px;
+}
+.find .title h3{
+    background: url(../img/images/cook.png) no-repeat 0 -2px /19px ;
+}
+.find .list li .content .txt{
+    color: #999;
+    margin-top:10px;
+    font-size: 12px;
+}
+/*!*选食谱找优惠    结束*!*/
+
+
+
+
+/*猜你喜欢    开始*/
+.like{
+    width:100%;
+    background: #fff;
+    margin-top:10px;
+    padding-bottom:10px;
+}
+.like .title h3{
+    background: url(../img/images/like.png) no-repeat 0 1px /19px ;
+}
+/*猜你喜欢    结束*/
+
+
+
+
+
+/*收藏区域    开始*/
+
+/*市场区域   开始*/
+.collect{
+    width:100%;
+    background: #fff;
+    margin-top:10px;
+    padding-bottom:10px;
+}
+
+/*收藏区域    结束*/
